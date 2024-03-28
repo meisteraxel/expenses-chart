@@ -37,7 +37,7 @@ function Chart(props) {
 
       <div className="total-container">
         <div>
-          <p>Total this month</p>
+          <p>Total this week</p>
           <h2>${totalAmount.toFixed(2)}</h2>
         </div>
         <div>

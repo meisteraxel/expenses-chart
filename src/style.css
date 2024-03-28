@@ -64,9 +64,17 @@ main {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+.spending-container {
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .spending-container h2 {
   color: var(--dark-brown);
   font-size: 2rem;
+  margin-bottom: auto;
 }
 
 .charts {
@@ -109,6 +117,7 @@ main {
   cursor: pointer;
   width: 85%;
   max-height: 300px;
+  transition: height 0.5s ease-in-out;
 }
 
 .bar:hover {
