@@ -1,47 +1,47 @@
-# Frontend Mentor - Expenses chart component solution
+# Expenses Chart Component
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This project started as a solution to the Expenses Chart Component challenge on Frontend Mentor. Frontend Mentor challenges help improve coding skills by building realistic projects. The original challenge can be found [here](https://github.com/meisteraxel/expenses-chart-component-main).
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The Original Challenge](#the-original-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [New Features](#new-features)
+- [My Process](#my-process)
+  - [Built With](#built-with)
 - [Author](#author)
 
 ## Overview
 
-### The challenge
+### The Original Challenge
 
-Users should be able to:
-
-- View the bar chart and hover over the individual bars to see the correct amounts for each day
-- See the current day’s bar highlighted in a different colour to the other bars
-- View the optimal layout for the content depending on their device’s screen size
-- See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
+The original challenge aimed to create an expenses chart component where users can view a bar chart, hover over individual bars to see the amounts for each day, and view the current day's bar highlighted in a different color. The solution was built using Semantic HTML5 markup, CSS custom properties, Flexbox, CSS Grid, and React.
 
 ### Screenshot
 
-![](./src/assets/screenshot.PNG)
+![Original Solution Screenshot](./src/assets/screenshot.PNG)
 
 ### Links
 
-- [Solution URL](https://github.com/meisteraxel/expenses-chart-component-main)
-- [Live site URL](https://expenses-chart-component-axmst.netlify.app/)
+- [Original Solution URL](https://github.com/meisteraxel/expenses-chart-component-main)
+- [Original Live Site URL](https://expenses-chart-component-axmst.netlify.app/)
 
-## My process
+## New Features
 
-### Built with
+- [] User should have an input for his expenses
+- [] more to come...
+
+## My Process
+
+### Built With
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [React](https://reactjs.org/) - JS library
+- React
 
 ## Author
 
