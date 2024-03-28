@@ -5,7 +5,7 @@ import Chart from "./components/Chart";
 import Input from "./components/Input";
 
 function App() {
-  const [balance, setBalance] = React.useState(7048.65);
+  const [balance, setBalance] = React.useState(1000);
   const [expenses, setExpenses] = React.useState([
     {
       day: "mon",
@@ -37,9 +37,34 @@ function App() {
     },
   ]);
 
+  function calcInput() {
+    const newBalance = document.getElementById("balance").value;
+    setBalance(newBalance !== "" ? newBalance : balance);
+
+    const updatedExpenses = expenses.map((item) => {
+      const inputValue = document.getElementById(item.day).value.trim();
+      const newAmount =
+        inputValue !== "" ? parseFloat(inputValue) : item.amount;
+
+      return {
+        ...item,
+        amount: newAmount,
+      };
+    });
+
+    setExpenses(updatedExpenses);
+
+    const inputElements = document.querySelectorAll(
+      ".input-container input[type=number]"
+    );
+    inputElements.forEach((inputElement) => {
+      inputElement.value = "";
+    });
+  }
+
   return (
     <main>
-      <Input />
+      <Input expenses={expenses} calcInput={calcInput} />
       <div>
         <Balance balance={balance} />
         <Chart balance={balance} expenses={expenses} />

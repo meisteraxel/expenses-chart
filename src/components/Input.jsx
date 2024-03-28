@@ -1,26 +1,20 @@
 import React from "react";
 import "../style.css";
 
-function Input() {
+function Input(props) {
   return (
     <div className="input-container">
       <label htmlFor="balance">Balance</label>
-      <input type="number" id="balance" />
-      <label htmlFor="mon">Monday</label>
-      <input type="number" id="mon" />
-      <label htmlFor="tue">Tuesday</label>
-      <input type="number" id="tue" />
-      <label htmlFor="wed">Wednesday</label>
-      <input type="number" id="wed" />
-      <label htmlFor="thu">Thursday</label>
-      <input type="number" id="thu" />
-      <label htmlFor="fri">Friday</label>
-      <input type="number" id="fri" />
-      <label htmlFor="sat">Saturday</label>
-      <input type="number" id="sat" />
-      <label htmlFor="sun">Sunday</label>
-      <input type="number" id="sun" />
-      <button>Submit</button>
+      <input type="number" id="balance" placeholder="1000" />
+      {props.expenses.map((item) => (
+        <>
+          <label key={item.day} htmlFor={item.day}>
+            {item.day}
+          </label>
+          <input type="number" id={item.day} placeholder="50" />
+        </>
+      ))}
+      <button onClick={props.calcInput}>Submit</button>
     </div>
   );
 }
