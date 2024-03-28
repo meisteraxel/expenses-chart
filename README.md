@@ -1,6 +1,6 @@
 # Expenses Chart Component
 
-This project started as a solution to the Expenses Chart Component challenge on Frontend Mentor. Frontend Mentor challenges help improve coding skills by building realistic projects. The original challenge can be found [here](https://github.com/meisteraxel/expenses-chart-component-main).
+This project is an extension of the original Expenses Chart Component challenge. In addition to the requirements specified in the original challenge, new features and functionalities have been added to enhance the user experience and provide additional functionality.
 
 ## Table of Contents
 
@@ -17,20 +17,23 @@ This project started as a solution to the Expenses Chart Component challenge on 
 
 ### The Original Challenge
 
-The original challenge aimed to create an expenses chart component where users can view a bar chart, hover over individual bars to see the amounts for each day, and view the current day's bar highlighted in a different color. The solution was built using Semantic HTML5 markup, CSS custom properties, Flexbox, CSS Grid, and React.
+The original challenge aimed to create an expenses chart component where users can view a bar chart, hover over individual bars to see the amounts for each day, and view the current day's bar highlighted in a different color. The solution was built using Semantic HTML5 markup, CSS custom properties, Flexbox and React.
 
 ### Screenshot
 
-![Original Solution Screenshot](./src/assets/screenshot.PNG)
+![Solution Screenshot](./src/assets/screenshot.PNG)
 
 ### Links
 
-- [Original Solution URL](https://github.com/meisteraxel/expenses-chart-component-main)
-- [Original Live Site URL](https://expenses-chart-component-axmst.netlify.app/)
+- [Solution URL](https://github.com/meisteraxel/expenses-chart)
+- [Live Site URL](https://expenses-chart-component-axmst.netlify.app/)
 
 ## New Features
 
-- [ ] User should have an input for his expenses
+- [x] User should have an input for his expenses
+- [x] User is able to update his expenses
+- [x] User is able to update only single days or only his budget and keeping all other values
+- [x] Save expenses to local storage so User can return to the App
 - [ ] more to come...
 
 ## My Process
@@ -40,7 +43,6 @@ The original challenge aimed to create an expenses chart component where users c
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - React
 
 ## Author
