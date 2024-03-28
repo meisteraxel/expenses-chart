@@ -30,8 +30,8 @@ The original challenge aimed to create an expenses chart component where users c
 
 ## New Features
 
-- [] User should have an input for his expenses
-- [] more to come...
+- [ ] User should have an input for his expenses
+- [ ] more to come...
 
 ## My Process
 
