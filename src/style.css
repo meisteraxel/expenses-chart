@@ -67,7 +67,6 @@ main {
 
 .charts {
   display: flex;
-  height: 200px;
   align-items: flex-end;
   justify-content: space-between;
   text-align: center;
