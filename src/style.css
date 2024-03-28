@@ -31,6 +31,8 @@ body {
 
 main {
   padding: 0px 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .balance-container {
@@ -56,7 +58,7 @@ main {
 .chart-container {
   padding: 40px;
   background-color: white;
-  margin: 20px 0px;
+  margin-top: 20px;
   border-radius: 20px;
 }
 
@@ -78,6 +80,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .single-chart-container:hover .popup {
@@ -101,7 +104,6 @@ main {
   background-color: var(--soft-red);
   border-radius: 5px;
   margin-top: 5px;
-  width: 50px;
   cursor: pointer;
   width: 85%;
 }
@@ -153,6 +155,38 @@ hr {
 
 .today {
   background-color: var(--cyan) !important;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.input-container label {
+  font-size: 1rem;
+  color: var(--dark-brown);
+  font-weight: 500;
+}
+
+.input-container input {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid var(--dark-brown);
+}
+
+.input-container button {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid var(--dark-brown);
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 @media (max-width: 630px) {
