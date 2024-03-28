@@ -35,7 +35,7 @@ main {
   gap: 20px;
 }
 
-.balance-container {
+.budget-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,11 +48,11 @@ main {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.balance-container h1 {
+.budget-container h1 {
   font-size: 1rem;
 }
 
-.balance-container h2 {
+.budget-container h2 {
   font-size: 1.8rem;
 }
 
@@ -183,6 +183,8 @@ hr {
   font-size: 1rem;
   color: var(--dark-brown);
   font-weight: 500;
+  position: relative;
+  top: 10px;
 }
 
 .input-container input {
@@ -231,7 +233,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 630px) {
-  .balance-container {
+  .budget-container {
     padding: 20px;
     width: 375px;
   }
@@ -268,7 +270,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 425px) {
-  .balance-container {
+  .budget-container {
     padding: 10px;
     width: 300px;
   }

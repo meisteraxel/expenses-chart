@@ -4,9 +4,9 @@ import "../style.css";
 function Input(props) {
   return (
     <div className="input-container">
-      <label htmlFor="balance">Balance</label>
+      <label htmlFor="budget">budget</label>
       <div className="inputwrapper">
-        <input type="number" id="balance" placeholder="1000" />
+        <input type="number" id="budget" placeholder="1000" />
         <span>$</span>
       </div>
       {props.expenses.map((item) => (

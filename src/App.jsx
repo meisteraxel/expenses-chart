@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import Balance from "./components/Balance";
+import Budget from "./components/Budget";
 import Chart from "./components/Chart";
 import Input from "./components/Input";
 
 function App() {
-  const [balance, setBalance] = React.useState(1000);
+  const [budget, setBudget] = React.useState(1000);
   const [expenses, setExpenses] = React.useState([
     {
       day: "mon",
@@ -38,8 +38,8 @@ function App() {
   ]);
 
   function calcInput() {
-    const newBalance = document.getElementById("balance").value;
-    setBalance(newBalance !== "" ? newBalance : balance);
+    const newBudget = document.getElementById("budget").value;
+    setBudget(newBudget !== "" ? newBudget : budget);
 
     const updatedExpenses = expenses.map((item) => {
       const inputValue = document.getElementById(item.day).value.trim();
@@ -66,8 +66,8 @@ function App() {
     <main>
       <Input expenses={expenses} calcInput={calcInput} />
       <div>
-        <Balance balance={balance} />
-        <Chart balance={balance} expenses={expenses} />
+        <Budget budget={budget} />
+        <Chart budget={budget} expenses={expenses} />
       </div>
     </main>
   );

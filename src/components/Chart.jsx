@@ -41,8 +41,8 @@ function Chart(props) {
           <h2>${totalAmount.toFixed(2)}</h2>
         </div>
         <div>
-          <h3>{((totalAmount / props.balance) * 100).toFixed(2)}%</h3>
-          <p>from Balance</p>
+          <h3>{((totalAmount / props.budget) * 100).toFixed(2)}%</h3>
+          <p>from budget</p>
         </div>
       </div>
     </div>
