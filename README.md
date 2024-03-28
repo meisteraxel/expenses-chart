@@ -26,7 +26,7 @@ The original challenge aimed to create an expenses chart component where users c
 ### Links
 
 - [Solution URL](https://github.com/meisteraxel/expenses-chart)
-- [Live Site URL](https://expenses-chart-component-axmst.netlify.app/)
+- [Live Site URL](https://expenses-tracker-axmst.netlify.app/)
 
 ## New Features
 
