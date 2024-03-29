@@ -42,7 +42,10 @@ function Chart(props) {
         </div>
         <div>
           <h3>{((totalAmount / props.budget) * 100).toFixed(2)}%</h3>
-          <p>from budget</p>
+          <p className="right-aligned">from budget</p>
+          <hr />
+          <p className="right-aligned">remaining</p>
+          <h3>{(props.budget - totalAmount).toFixed(2)}$</h3>
         </div>
       </div>
     </div>

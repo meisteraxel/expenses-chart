@@ -174,8 +174,8 @@ hr {
 
 .total-container h2 {
   font-size: 3rem;
-  margin-bottom: -10px;
   color: var(--dark-brown);
+  margin-bottom: -15px;
 }
 
 .total-container h3 {
@@ -190,6 +190,10 @@ hr {
 
 .today {
   background-color: var(--cyan) !important;
+}
+
+.right-aligned {
+  text-align: right;
 }
 
 .input-container {
