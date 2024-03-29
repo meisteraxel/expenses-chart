@@ -3,6 +3,7 @@ import "./style.css";
 import Budget from "./components/Budget";
 import Chart from "./components/Chart";
 import Input from "./components/Input";
+import Instruction from "./components/Instruction";
 
 function App() {
   const [budget, setBudget] = React.useState(1000);
@@ -37,6 +38,12 @@ function App() {
     },
   ]);
 
+  function keyPress(event) {
+    if (event.key === "Enter") {
+      calcInput();
+    }
+  }
+
   function calcInput() {
     const newBudget = document.getElementById("budget").value;
     setBudget(newBudget !== "" ? newBudget : budget);
@@ -62,14 +69,36 @@ function App() {
     });
   }
 
+  function reset() {
+    setBudget(0);
+    const resetExpenses = expenses.map((item) => {
+      return {
+        day: item.day,
+        amount: 0,
+      };
+    });
+
+    setExpenses(resetExpenses);
+  }
+
   return (
-    <main>
-      <Input expenses={expenses} calcInput={calcInput} />
-      <div>
-        <Budget budget={budget} />
-        <Chart budget={budget} expenses={expenses} />
-      </div>
-    </main>
+    <>
+      <header>
+        <Instruction />
+      </header>
+      <main>
+        <Input
+          expenses={expenses}
+          calcInput={calcInput}
+          resetExpenses={reset}
+          keyPress={keyPress}
+        />
+        <div>
+          <Budget budget={budget} />
+          <Chart budget={budget} expenses={expenses} />
+        </div>
+      </main>
+    </>
   );
 }
 
