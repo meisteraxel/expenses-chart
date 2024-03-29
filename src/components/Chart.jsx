@@ -16,7 +16,7 @@ function Chart(props) {
         <h2>Spendings of the Week</h2>
         <div className="charts">
           {props.expenses.map((item, index) => (
-            <div className="single-chart-container">
+            <div className="single-chart-container" key={index}>
               <div className="popup">
                 <p>${item.amount}</p>
               </div>
@@ -28,8 +28,8 @@ function Chart(props) {
           ))}
         </div>
         <div className="days">
-          {props.expenses.map((item) => (
-            <p>{item.day}</p>
+          {props.expenses.map((item, index) => (
+            <p key={index}>{item.day}</p>
           ))}
         </div>
         <hr />

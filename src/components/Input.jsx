@@ -4,8 +4,8 @@ import "../style.css";
 function Input(props) {
   return (
     <div className="input-container">
-      <label htmlFor="budget">budget</label>
       <div className="inputwrapper">
+        <label htmlFor="budget">budget</label>
         <input
           type="number"
           id="budget"
@@ -14,8 +14,8 @@ function Input(props) {
         />
         <span>$</span>
       </div>
-      {props.expenses.map((item) => (
-        <>
+      {props.expenses.map((item, index) => (
+        <div key={index}>
           <label key={item.day} htmlFor={item.day}>
             {item.day}
           </label>
@@ -28,7 +28,7 @@ function Input(props) {
             />
             <span>$</span>
           </div>
-        </>
+        </div>
       ))}
       <button onClick={props.resetExpenses} id="reset-btn">
         Reset
