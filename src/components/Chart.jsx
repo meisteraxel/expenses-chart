@@ -22,7 +22,7 @@ function Chart(props) {
   return (
     <div className="chart-container">
       <div className="spending-container">
-        <h2>Spendings of the Week</h2>
+        <h2>Weekly Expenses</h2>
         <div className="charts">
           {props.expenses.map((item, index) => (
             <div className="single-chart-container" key={index}>
