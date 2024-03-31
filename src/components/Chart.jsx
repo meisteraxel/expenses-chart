@@ -5,9 +5,18 @@ function Chart(props) {
   const currentDate = new Date();
   const currentDay = currentDate.getDay();
   let totalAmount = 0;
+  let percentage;
 
+  //Calculate total amount
   for (let i = 0; i < props.expenses.length; i++) {
     totalAmount += props.expenses[i].amount;
+  }
+
+  //Check if total amount or budget is 0 and set percentage accordingly
+  if (props.budget !== 0 && totalAmount !== 0) {
+    percentage = ((totalAmount / props.budget) * 100).toFixed(2);
+  } else {
+    percentage = 0;
   }
 
   return (
@@ -41,7 +50,7 @@ function Chart(props) {
           <h2>${totalAmount.toFixed(2)}</h2>
         </div>
         <div>
-          <h3>{((totalAmount / props.budget) * 100).toFixed(2)}%</h3>
+          <h3>{percentage}%</h3>
           <p className="right-aligned">from budget</p>
           <hr />
           <p className="right-aligned">remaining</p>
