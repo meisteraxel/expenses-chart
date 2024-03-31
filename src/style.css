@@ -199,8 +199,8 @@ hr {
 .input-container {
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  width: 300px;
+  padding: 20px 40px;
+  width: 400px;
   background-color: white;
   border-radius: 20px;
   justify-content: space-evenly;
@@ -257,6 +257,11 @@ hr {
   position: absolute;
   right: 5px;
   bottom: 3px;
+}
+
+.explanation {
+  font-size: 0.7rem;
+  text-align: justify;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

@@ -3,7 +3,6 @@ import "./style.css";
 import Budget from "./components/Budget";
 import Chart from "./components/Chart";
 import Input from "./components/Input";
-import Instruction from "./components/Instruction";
 
 function App() {
   const [budget, setBudget] = React.useState(1000);
@@ -83,11 +82,9 @@ function App() {
 
   return (
     <>
-      <header>
-        <Instruction />
-      </header>
       <main>
         <Input
+          budget={budget}
           expenses={expenses}
           calcInput={calcInput}
           resetExpenses={reset}

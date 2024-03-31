@@ -4,12 +4,18 @@ import "../style.css";
 function Input(props) {
   return (
     <div className="input-container">
+      <p className="explanation">
+        Set a weekly budget and track expenses, starting with placeholder data.
+        You can reset everything, input your budget, and submit it. Enter
+        expenses for each day or select days and submit them to the tracker.
+      </p>
+      <hr />
       <div className="inputwrapper">
         <label htmlFor="budget">budget</label>
         <input
           type="number"
           id="budget"
-          placeholder="1000"
+          placeholder={props.budget}
           onKeyDown={props.keyPress}
         />
         <span>$</span>
@@ -23,7 +29,7 @@ function Input(props) {
             <input
               type="number"
               id={item.day}
-              placeholder="50"
+              placeholder={item.amount}
               onKeyDown={props.keyPress}
             />
             <span>$</span>
