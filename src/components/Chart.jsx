@@ -31,7 +31,7 @@ function Chart(props) {
               </div>
               <div
                 className={`bar ${currentDay === index + 1 ? "today" : ""}`}
-                style={{ height: `${item.amount * 3}px` }}
+                style={{ height: `${Math.log(item.amount + 1) * 30}px` }}
               ></div>
             </div>
           ))}
