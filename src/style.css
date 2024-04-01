@@ -33,7 +33,6 @@ main {
   padding: 0px 20px;
   display: flex;
   gap: 20px;
-  display: flex;
   justify-content: center;
 }
 
@@ -274,67 +273,85 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--soft-red) !important;
 }
 
-@media (max-width: 630px) {
-  .budget-container {
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
     padding: 20px;
-    width: 375px;
   }
 
-  .chart-container {
-    padding: 30px 20px;
-    width: 375px;
-  }
-
-  .single-chart-container {
-    width: 40px;
-  }
-
-  .popup {
-    font-size: 0.5rem;
-    padding: 5px 0px;
-  }
-
-  .days {
+  .input-container {
+    padding: 20px;
     gap: 10px;
+    width: 540px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
   }
 
-  .spending-container h2 {
-    font-size: 1.5rem;
+  .budget-container {
+    width: 400px;
+  }
+
+  .input-container {
+    width: 400px;
   }
 
   .total-container h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .total-container p {
     font-size: 0.8rem;
+  }
+
+  .total-container h3 {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 425px) {
   .budget-container {
-    padding: 10px;
     width: 300px;
   }
 
-  main {
-    padding: 0px 5px;
-  }
-
-  .chart-container {
-    padding: 20px 15px;
+  .input-container {
     width: 300px;
   }
 
   .spending-container h2 {
     font-size: 1.5rem;
   }
+  .chart-container {
+    padding: 30px;
+  }
+
+  .single-chart-container {
+    width: 30px;
+  }
+
+  .total-container {
+    height: 70px;
+  }
 
   .total-container h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin-bottom: -10px;
   }
 
   .total-container p {
+    font-size: 0.6rem;
+  }
+
+  .total-container h3 {
     font-size: 0.8rem;
+  }
+
+  .popup {
+    font-size: 0.5rem;
+    padding: 5px 0px;
   }
 }
