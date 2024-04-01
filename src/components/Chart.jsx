@@ -54,7 +54,9 @@ function Chart(props) {
           <p className="right-aligned">from budget</p>
           <hr />
           <p className="right-aligned">remaining</p>
-          <h3>{(props.budget - totalAmount).toFixed(2)}$</h3>
+          <h3 className={props.budget - totalAmount < 0 ? "red" : ""}>
+            {(props.budget - totalAmount).toFixed(2)}$
+          </h3>
         </div>
       </div>
     </div>
