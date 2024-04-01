@@ -6,10 +6,10 @@ import Input from "./components/Input";
 
 function App() {
   const [budget, setBudget] = React.useState(
-    JSON.parse(localStorage.getItem("budget")) || 1000
+    JSON.parse(localStorage.getItem("budget")) ?? 1000
   );
   const [expenses, setExpenses] = React.useState(
-    JSON.parse(localStorage.getItem("expenses")) || [
+    JSON.parse(localStorage.getItem("expenses")) ?? [
       {
         day: "mon",
         amount: 20.45,
