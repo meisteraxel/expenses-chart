@@ -50,7 +50,9 @@ function Chart(props) {
           <h2>${totalAmount.toFixed(2)}</h2>
         </div>
         <div>
-          <h3>{percentage}%</h3>
+          <h3 className={props.budget - totalAmount < 0 ? "red" : ""}>
+            {percentage}%
+          </h3>
           <p className="right-aligned">from budget</p>
           <hr />
           <p className="right-aligned">remaining</p>
