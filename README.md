@@ -33,7 +33,7 @@ The original challenge aimed to create an expenses chart component where users c
 - [x] User should have an input for his expenses
 - [x] User is able to update his expenses
 - [x] User is able to update only single days or only his budget and keeping all other values
-- [ ] Save expenses to local storage so User can return to the App
+- [x] Save expenses and budget to local storage
 - [x] User is able to reset all expenses and the budget
 - [x] User can see his remaining budget
 - [ ] more to come...
