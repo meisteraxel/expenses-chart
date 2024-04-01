@@ -36,6 +36,7 @@ The original challenge aimed to create an expenses chart component where users c
 - [x] Save expenses and budget to local storage
 - [x] User is able to reset all expenses and the budget
 - [x] User can see his remaining budget
+- [x] Responsive Layout for all devices
 - [ ] more to come...
 
 ## My Process
